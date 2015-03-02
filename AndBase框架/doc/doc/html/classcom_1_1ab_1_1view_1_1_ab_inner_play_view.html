@@ -1,0 +1,992 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>AndBase开发框架: com.ab.view.AbInnerPlayView类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AndBase开发框架
+   &#160;<span id="projectnumber">1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecom.html">com</a></li><li class="navelem"><a class="el" href="namespacecom_1_1ab.html">ab</a></li><li class="navelem"><a class="el" href="namespacecom_1_1ab_1_1view.html">view</a></li><li class="navelem"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html">AbInnerPlayView</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pac-attribs">包属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">com.ab.view.AbInnerPlayView类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 com.ab.view.AbInnerPlayView 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.png" usemap="#com.ab.view.AbInnerPlayView_map" alt=""/>
+  <map id="com.ab.view.AbInnerPlayView_map" name="com.ab.view.AbInnerPlayView_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0a5fedbe855c9097a38365c1ddb9d076"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a0a5fedbe855c9097a38365c1ddb9d076">AbInnerPlayView</a> (Context <a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#aca3cfaf5d423b62b0aad4af7ad29397d">context</a>, AttributeSet attrs)</td></tr>
+<tr class="separator:a0a5fedbe855c9097a38365c1ddb9d076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7e78707fa52cf3a9750bee184b393c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#ade7e78707fa52cf3a9750bee184b393c">creatIndex</a> ()</td></tr>
+<tr class="separator:ade7e78707fa52cf3a9750bee184b393c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87345ba6bf3ff33dce83cee664a408c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#aa87345ba6bf3ff33dce83cee664a408c">makesurePosition</a> ()</td></tr>
+<tr class="separator:aa87345ba6bf3ff33dce83cee664a408c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06e8bb5e1964a54a0ad408677667f21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#ac06e8bb5e1964a54a0ad408677667f21">setOnItemClickListener</a> (<a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_item_click_listener.html">AbOnItemClickListener</a> onItemClickListener)</td></tr>
+<tr class="separator:ac06e8bb5e1964a54a0ad408677667f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29bd88a425c89ab9a35796fdc19408e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#ac29bd88a425c89ab9a35796fdc19408e">addView</a> (View view)</td></tr>
+<tr class="separator:ac29bd88a425c89ab9a35796fdc19408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9fab65396de73029fd814bd8593b7c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#ad9fab65396de73029fd814bd8593b7c5">removeAllViews</a> ()</td></tr>
+<tr class="separator:ad9fab65396de73029fd814bd8593b7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c70445236213115ada2dab374d98b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#af4c70445236213115ada2dab374d98b0">startPlayView</a> ()</td></tr>
+<tr class="separator:af4c70445236213115ada2dab374d98b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c245a95fcd88b194aec0170af22a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a46c245a95fcd88b194aec0170af22a2d">setOnPageChangeListener</a> (<a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_change_listener.html">AbOnChangeListener</a> abChangeListener)</td></tr>
+<tr class="separator:a46c245a95fcd88b194aec0170af22a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae804f23942dc3af1c24db2779d92563d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#ae804f23942dc3af1c24db2779d92563d">setOnPageScrolledListener</a> (<a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_scrolled_listener.html">AbOnScrolledListener</a> abScrolledListener)</td></tr>
+<tr class="separator:ae804f23942dc3af1c24db2779d92563d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0eb1bf259e6c41a85a0824235e0bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#aff0eb1bf259e6c41a85a0824235e0bff">setDisplayHidePointImage</a> (Bitmap <a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a0780a23a2a3a93663097b782c9849f76">displayImage</a>, Bitmap <a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#ae4dcf9d9b51e514248dd22edd3be0ab3">hideImage</a>)</td></tr>
+<tr class="separator:aff0eb1bf259e6c41a85a0824235e0bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2310beac47835030df5c1b20fa8385"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_view_pager.html">AbInnerViewPager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a6e2310beac47835030df5c1b20fa8385">getViewPager</a> ()</td></tr>
+<tr class="separator:a6e2310beac47835030df5c1b20fa8385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a3da39e831a266745a544c60c65d6df59"><td class="memItemLeft" align="right" valign="top">LinearLayout.LayoutParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a3da39e831a266745a544c60c65d6df59">layoutParamsFF</a> = null</td></tr>
+<tr class="separator:a3da39e831a266745a544c60c65d6df59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c16d90d4c89386dc28771ae7fe4b0b"><td class="memItemLeft" align="right" valign="top">LinearLayout.LayoutParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a36c16d90d4c89386dc28771ae7fe4b0b">layoutParamsFW</a> = null</td></tr>
+<tr class="separator:a36c16d90d4c89386dc28771ae7fe4b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f8ae2e679e8039f3999fa13c007131a"><td class="memItemLeft" align="right" valign="top">LinearLayout.LayoutParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a5f8ae2e679e8039f3999fa13c007131a">layoutParamsWF</a> = null</td></tr>
+<tr class="separator:a5f8ae2e679e8039f3999fa13c007131a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1570e0f7fb351541f545f684fc207e03"><td class="memItemLeft" align="right" valign="top">LinearLayout.LayoutParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a1570e0f7fb351541f545f684fc207e03">layoutParamsWW</a> = null</td></tr>
+<tr class="separator:a1570e0f7fb351541f545f684fc207e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+包属性</h2></td></tr>
+<tr class="memitem:af39445385bec774651525d6414b56e63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#af39445385bec774651525d6414b56e63">i</a></td></tr>
+<tr class="separator:af39445385bec774651525d6414b56e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4dcf9d9b51e514248dd22edd3be0ab3"><td class="memItemLeft" align="right" valign="top">Bitmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#ae4dcf9d9b51e514248dd22edd3be0ab3">hideImage</a></td></tr>
+<tr class="separator:ae4dcf9d9b51e514248dd22edd3be0ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a4637aaa3a08907ae559eb1eada4e1ae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a4637aaa3a08907ae559eb1eada4e1ae4">onPageScrolledCallBack</a> (int position)</td></tr>
+<tr class="separator:a4637aaa3a08907ae559eb1eada4e1ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc490697bacb8a52bb66eda6193efbd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#adc490697bacb8a52bb66eda6193efbd6">onPageSelectedCallBack</a> (int position)</td></tr>
+<tr class="separator:adc490697bacb8a52bb66eda6193efbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:aca3cfaf5d423b62b0aad4af7ad29397d"><td class="memItemLeft" align="right" valign="top">Context&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#aca3cfaf5d423b62b0aad4af7ad29397d">context</a></td></tr>
+<tr class="separator:aca3cfaf5d423b62b0aad4af7ad29397d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6a3fed0478c221e8656ff2daf27159"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_view_pager.html">AbInnerViewPager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#aac6a3fed0478c221e8656ff2daf27159">mViewPager</a></td></tr>
+<tr class="separator:aac6a3fed0478c221e8656ff2daf27159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390e95f96aa68c0d34fe461ef67e4608"><td class="memItemLeft" align="right" valign="top">LinearLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a390e95f96aa68c0d34fe461ef67e4608">selectIndexLayout</a></td></tr>
+<tr class="separator:a390e95f96aa68c0d34fe461ef67e4608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31baad553e1f8872492886b6856ce2dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a31baad553e1f8872492886b6856ce2dc">count</a></td></tr>
+<tr class="separator:a31baad553e1f8872492886b6856ce2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0780a23a2a3a93663097b782c9849f76"><td class="memItemLeft" align="right" valign="top">Bitmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a0780a23a2a3a93663097b782c9849f76">displayImage</a></td></tr>
+<tr class="separator:a0780a23a2a3a93663097b782c9849f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ebcd548c76c4276ec9ae8766915579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_item_click_listener.html">AbOnItemClickListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a99ebcd548c76c4276ec9ae8766915579">mOnItemClickListener</a></td></tr>
+<tr class="separator:a99ebcd548c76c4276ec9ae8766915579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf552c2222c3e1acf8af0ee7e4e98912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_change_listener.html">AbOnChangeListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#abf552c2222c3e1acf8af0ee7e4e98912">mAbChangeListener</a></td></tr>
+<tr class="separator:abf552c2222c3e1acf8af0ee7e4e98912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4db1be290b628c652e3c3d16974778"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_scrolled_listener.html">AbOnScrolledListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a2d4db1be290b628c652e3c3d16974778">mAbScrolledListener</a></td></tr>
+<tr class="separator:a2d4db1be290b628c652e3c3d16974778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f5c05b569b0399250ac64ceb71f9bc"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; View &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a72f5c05b569b0399250ac64ceb71f9bc">mListViews</a> = null</td></tr>
+<tr class="separator:a72f5c05b569b0399250ac64ceb71f9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed36adf7d85165d2a82384e218b6d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1ab_1_1adapter_1_1_ab_view_pager_adapter.html">AbViewPagerAdapter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a8ed36adf7d85165d2a82384e218b6d09">mAbViewPagerAdapter</a> = null</td></tr>
+<tr class="separator:a8ed36adf7d85165d2a82384e218b6d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0447c5e7bb71e1d57e867b56710c18a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#aa0447c5e7bb71e1d57e867b56710c18a">width</a> = 320</td></tr>
+<tr class="separator:aa0447c5e7bb71e1d57e867b56710c18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c47a1fd23cb873db4c198db4fcbbe8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a6c47a1fd23cb873db4c198db4fcbbe8a">height</a> = 480</td></tr>
+<tr class="separator:a6c47a1fd23cb873db4c198db4fcbbe8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:a9acd1616cdab89daa73894c8c8d84270"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a9acd1616cdab89daa73894c8c8d84270">TAG</a> = &quot;AbPageView&quot;</td></tr>
+<tr class="separator:a9acd1616cdab89daa73894c8c8d84270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617b8fb797d6e84f1c81d0cdfa099b9c"><td class="memItemLeft" align="right" valign="top">static final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_play_view.html#a617b8fb797d6e84f1c81d0cdfa099b9c">D</a> = <a class="el" href="classcom_1_1ab_1_1global_1_1_ab_app_data.html#acd537fab5c27e4f2c7cb650ab1a5bd5d">AbAppData.DEBUG</a></td></tr>
+<tr class="separator:a617b8fb797d6e84f1c81d0cdfa099b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>名称：AbInnerPlayView 描述：可与ScrollView 一起使用的 下面带点的滑动View,事件各自承担 mAbInnerPlayView.getViewPager().setParentScrollView((ScrollView)findViewById(R.id.layout00)); mAbInnerPlayView.getViewPager().setMaxHeight(360); </p>
+<dl class="section author"><dt>作者</dt><dd>zhaoqp </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2011-11-28 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd></dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0a5fedbe855c9097a38365c1ddb9d076"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.ab.view.AbInnerPlayView.AbInnerPlayView </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AttributeSet&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Instantiates a new ab inner play view.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>the context </td></tr>
+    <tr><td class="paramname">attrs</td><td>the attrs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ac29bd88a425c89ab9a35796fdc19408e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.addView </td>
+          <td>(</td>
+          <td class="paramtype">View&#160;</td>
+          <td class="paramname"><em>view</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：添加可播放视图.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>the view </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ade7e78707fa52cf3a9750bee184b393c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.creatIndex </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creat index. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e2310beac47835030df5c1b20fa8385"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_view_pager.html">AbInnerViewPager</a> com.ab.view.AbInnerPlayView.getViewPager </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：获取这个滑动的ViewPager类.</p>
+<dl class="section return"><dt>返回</dt><dd>the view pager </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa87345ba6bf3ff33dce83cee664a408c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.makesurePosition </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Makesure position. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4637aaa3a08907ae559eb1eada4e1ae4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.onPageScrolledCallBack </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：设置页面切换事件.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>the position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adc490697bacb8a52bb66eda6193efbd6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.onPageSelectedCallBack </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：设置页面切换事件.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>the position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad9fab65396de73029fd814bd8593b7c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.removeAllViews </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：删除可播放视图. </p>
+
+</div>
+</div>
+<a class="anchor" id="aff0eb1bf259e6c41a85a0824235e0bff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.setDisplayHidePointImage </td>
+          <td>(</td>
+          <td class="paramtype">Bitmap&#160;</td>
+          <td class="paramname"><em>displayImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Bitmap&#160;</td>
+          <td class="paramname"><em>hideImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the display hide point image.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">displayImage</td><td>the display image </td></tr>
+    <tr><td class="paramname">hideImage</td><td>the hide image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac06e8bb5e1964a54a0ad408677667f21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.setOnItemClickListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_item_click_listener.html">AbOnItemClickListener</a>&#160;</td>
+          <td class="paramname"><em>onItemClickListener</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the on item click listener.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">onItemClickListener</td><td>the new on item click listener </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a46c245a95fcd88b194aec0170af22a2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.setOnPageChangeListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_change_listener.html">AbOnChangeListener</a>&#160;</td>
+          <td class="paramname"><em>abChangeListener</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：设置页面切换的监听器.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abChangeListener</td><td>the new on page change listener </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae804f23942dc3af1c24db2779d92563d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.setOnPageScrolledListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_scrolled_listener.html">AbOnScrolledListener</a>&#160;</td>
+          <td class="paramname"><em>abScrolledListener</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：设置页面滑动的监听器.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abScrolledListener</td><td>the new on page scrolled listener </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af4c70445236213115ada2dab374d98b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbInnerPlayView.startPlayView </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：自动轮播. </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="aca3cfaf5d423b62b0aad4af7ad29397d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Context com.ab.view.AbInnerPlayView.context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The context. </p>
+
+</div>
+</div>
+<a class="anchor" id="a31baad553e1f8872492886b6856ce2dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbInnerPlayView.count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The i. </p>
+
+</div>
+</div>
+<a class="anchor" id="a617b8fb797d6e84f1c81d0cdfa099b9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final boolean com.ab.view.AbInnerPlayView.D = <a class="el" href="classcom_1_1ab_1_1global_1_1_ab_app_data.html#acd537fab5c27e4f2c7cb650ab1a5bd5d">AbAppData.DEBUG</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The Constant D. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0780a23a2a3a93663097b782c9849f76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bitmap com.ab.view.AbInnerPlayView.displayImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The hide image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c47a1fd23cb873db4c198db4fcbbe8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbInnerPlayView.height = 480</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The height. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae4dcf9d9b51e514248dd22edd3be0ab3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bitmap com.ab.view.AbInnerPlayView.hideImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af39445385bec774651525d6414b56e63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbInnerPlayView.i</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3da39e831a266745a544c60c65d6df59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout.LayoutParams com.ab.view.AbInnerPlayView.layoutParamsFF = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The layout params ff. </p>
+
+</div>
+</div>
+<a class="anchor" id="a36c16d90d4c89386dc28771ae7fe4b0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout.LayoutParams com.ab.view.AbInnerPlayView.layoutParamsFW = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The layout params fw. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f8ae2e679e8039f3999fa13c007131a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout.LayoutParams com.ab.view.AbInnerPlayView.layoutParamsWF = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The layout params wf. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1570e0f7fb351541f545f684fc207e03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout.LayoutParams com.ab.view.AbInnerPlayView.layoutParamsWW = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The layout params ww. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf552c2222c3e1acf8af0ee7e4e98912"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_change_listener.html">AbOnChangeListener</a> com.ab.view.AbInnerPlayView.mAbChangeListener</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The m ab change listener. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d4db1be290b628c652e3c3d16974778"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_scrolled_listener.html">AbOnScrolledListener</a> com.ab.view.AbInnerPlayView.mAbScrolledListener</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The m ab scrolled listener. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8ed36adf7d85165d2a82384e218b6d09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1ab_1_1adapter_1_1_ab_view_pager_adapter.html">AbViewPagerAdapter</a> com.ab.view.AbInnerPlayView.mAbViewPagerAdapter = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The m ab view pager adapter. </p>
+
+</div>
+</div>
+<a class="anchor" id="a72f5c05b569b0399250ac64ceb71f9bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;View&gt; com.ab.view.AbInnerPlayView.mListViews = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The m list views. </p>
+
+</div>
+</div>
+<a class="anchor" id="a99ebcd548c76c4276ec9ae8766915579"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_on_item_click_listener.html">AbOnItemClickListener</a> com.ab.view.AbInnerPlayView.mOnItemClickListener</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The m on item click listener. </p>
+
+</div>
+</div>
+<a class="anchor" id="aac6a3fed0478c221e8656ff2daf27159"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_inner_view_pager.html">AbInnerViewPager</a> com.ab.view.AbInnerPlayView.mViewPager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The m view pager. </p>
+
+</div>
+</div>
+<a class="anchor" id="a390e95f96aa68c0d34fe461ef67e4608"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout com.ab.view.AbInnerPlayView.selectIndexLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The select index layout. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9acd1616cdab89daa73894c8c8d84270"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.ab.view.AbInnerPlayView.TAG = &quot;AbPageView&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The tag. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa0447c5e7bb71e1d57e867b56710c18a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbInnerPlayView.width = 320</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The width. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>F:/document/project/AndBase/src/com/ab/view/<a class="el" href="_ab_inner_play_view_8java.html">AbInnerPlayView.java</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 七月 16日 星期二 17:24:20 , 为 AndBase开发框架使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

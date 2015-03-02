@@ -1,0 +1,1504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>AndBase开发框架: com.ab.view.AbPullToRefreshListView类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AndBase开发框架
+   &#160;<span id="projectnumber">1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecom.html">com</a></li><li class="navelem"><a class="el" href="namespacecom_1_1ab.html">ab</a></li><li class="navelem"><a class="el" href="namespacecom_1_1ab_1_1view.html">view</a></li><li class="navelem"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html">AbPullToRefreshListView</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">com.ab.view.AbPullToRefreshListView类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 com.ab.view.AbPullToRefreshListView 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.png" usemap="#com.ab.view.AbPullToRefreshListView_map" alt=""/>
+  <map id="com.ab.view.AbPullToRefreshListView_map" name="com.ab.view.AbPullToRefreshListView_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view_1_1_on_refresh_listener.html">OnRefreshListener</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4ce900decd86597ba79a2e52881c8ffd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a4ce900decd86597ba79a2e52881c8ffd">AbPullToRefreshListView</a> (Context context)</td></tr>
+<tr class="separator:a4ce900decd86597ba79a2e52881c8ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6812c4d8621dcb41780f9d2a5959e5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#aa6812c4d8621dcb41780f9d2a5959e5d">AbPullToRefreshListView</a> (Context context, AttributeSet attrs)</td></tr>
+<tr class="separator:aa6812c4d8621dcb41780f9d2a5959e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c03b31980f405e71eb891c0e8ee66aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a8c03b31980f405e71eb891c0e8ee66aa">onScroll</a> (AbsListView arg0, int firstVisiableItem, int visibleItemCount, int totalItemCount)</td></tr>
+<tr class="separator:a8c03b31980f405e71eb891c0e8ee66aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab576efeeb1fb4a9543992cc668b3182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#aab576efeeb1fb4a9543992cc668b3182">onScrollStateChanged</a> (AbsListView view, int scrollState)</td></tr>
+<tr class="separator:aab576efeeb1fb4a9543992cc668b3182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a14ca057d0b34d3b9a84a3307903d92"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a2a14ca057d0b34d3b9a84a3307903d92">onTouchEvent</a> (MotionEvent event)</td></tr>
+<tr class="separator:a2a14ca057d0b34d3b9a84a3307903d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10cb3b70204fdfd71dea54a69af6bfd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a10cb3b70204fdfd71dea54a69af6bfd2">setonRefreshListener</a> (<a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view_1_1_on_refresh_listener.html">OnRefreshListener</a> <a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a258a1cbf328c7accf87b5fb88bf36425">refreshListener</a>)</td></tr>
+<tr class="separator:a10cb3b70204fdfd71dea54a69af6bfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3909faff902a6320d72c2e1fe73ab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a9a3909faff902a6320d72c2e1fe73ab8">onRefreshComplete</a> ()</td></tr>
+<tr class="separator:a9a3909faff902a6320d72c2e1fe73ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca23dced66e7f746805b92b8e0eb5f0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#aca23dced66e7f746805b92b8e0eb5f0b">onScrollComplete</a> (int have)</td></tr>
+<tr class="separator:aca23dced66e7f746805b92b8e0eb5f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9397bd43a38db34c25243e3f56fc7c37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a9397bd43a38db34c25243e3f56fc7c37">setAdapter</a> (BaseAdapter adapter)</td></tr>
+<tr class="separator:a9397bd43a38db34c25243e3f56fc7c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb970e1c7117af7b43017becabaef5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a0eb970e1c7117af7b43017becabaef5a">setRefreshItem</a> (<a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_item.html">AbHttpItem</a> item)</td></tr>
+<tr class="separator:a0eb970e1c7117af7b43017becabaef5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40df07974883ca560b9bc1fe64cda0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#ab40df07974883ca560b9bc1fe64cda0f">setScrollItem</a> (<a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_item.html">AbHttpItem</a> item)</td></tr>
+<tr class="separator:ab40df07974883ca560b9bc1fe64cda0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a01589b4516a8d99da8357a8f85b867d3"><td class="memItemLeft" align="right" valign="top">LinearLayout.LayoutParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a01589b4516a8d99da8357a8f85b867d3">layoutParamsFF</a> = null</td></tr>
+<tr class="separator:a01589b4516a8d99da8357a8f85b867d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a15203f9af5ce41e18056326886cd39"><td class="memItemLeft" align="right" valign="top">LinearLayout.LayoutParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a4a15203f9af5ce41e18056326886cd39">layoutParamsFW</a> = null</td></tr>
+<tr class="separator:a4a15203f9af5ce41e18056326886cd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a223315247463bd1b2b962b67dee11767"><td class="memItemLeft" align="right" valign="top">LinearLayout.LayoutParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a223315247463bd1b2b962b67dee11767">layoutParamsWF</a> = null</td></tr>
+<tr class="separator:a223315247463bd1b2b962b67dee11767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29de942f1a56871f0d15abd5be3ea8b"><td class="memItemLeft" align="right" valign="top">LinearLayout.LayoutParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#ab29de942f1a56871f0d15abd5be3ea8b">layoutParamsWW</a> = null</td></tr>
+<tr class="separator:ab29de942f1a56871f0d15abd5be3ea8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:abead1b751fac830c28eab7768e0d12c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#abead1b751fac830c28eab7768e0d12c1">init</a> (Context context)</td></tr>
+<tr class="separator:abead1b751fac830c28eab7768e0d12c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e531c34f6cf479e28f0eff6ae5b951"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a45e531c34f6cf479e28f0eff6ae5b951">changeHeaderViewByState</a> ()</td></tr>
+<tr class="separator:a45e531c34f6cf479e28f0eff6ae5b951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1e22624a390e20462c866ce0194a99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a6b1e22624a390e20462c866ce0194a99">onRefresh</a> ()</td></tr>
+<tr class="separator:a6b1e22624a390e20462c866ce0194a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4ffb8dbe60c857acacf860fbff41f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a0c4ffb8dbe60c857acacf860fbff41f0">measureView</a> (View child)</td></tr>
+<tr class="separator:a0c4ffb8dbe60c857acacf860fbff41f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a4e62509b84a27291fffe2fcca77dadc9"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a4e62509b84a27291fffe2fcca77dadc9">TAG</a> = &quot;AbPullToRefreshListView&quot;</td></tr>
+<tr class="separator:a4e62509b84a27291fffe2fcca77dadc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d1520cc4bdf003cb7f68efa9657678"><td class="memItemLeft" align="right" valign="top">LinearLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#af4d1520cc4bdf003cb7f68efa9657678">headerView</a></td></tr>
+<tr class="separator:af4d1520cc4bdf003cb7f68efa9657678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219af3d09060ad91b25ffc02ae3d8e98"><td class="memItemLeft" align="right" valign="top">TextView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a219af3d09060ad91b25ffc02ae3d8e98">tipsTextview</a></td></tr>
+<tr class="separator:a219af3d09060ad91b25ffc02ae3d8e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfaf0208104ca8faef771b505001df0"><td class="memItemLeft" align="right" valign="top">TextView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#accfaf0208104ca8faef771b505001df0">lastUpdatedTextView</a></td></tr>
+<tr class="separator:accfaf0208104ca8faef771b505001df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbd7a78ce78d2fa19abf4fe0df85077"><td class="memItemLeft" align="right" valign="top">ImageView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a9cbd7a78ce78d2fa19abf4fe0df85077">arrowImageView</a></td></tr>
+<tr class="separator:a9cbd7a78ce78d2fa19abf4fe0df85077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bee1963d293a48ad9878eca4dd53c39"><td class="memItemLeft" align="right" valign="top">ProgressBar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a8bee1963d293a48ad9878eca4dd53c39">headerProgressBar</a></td></tr>
+<tr class="separator:a8bee1963d293a48ad9878eca4dd53c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f36eb21b04be679a48e1ff6207c531a"><td class="memItemLeft" align="right" valign="top">Bitmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a1f36eb21b04be679a48e1ff6207c531a">arrowImage</a> = null</td></tr>
+<tr class="separator:a1f36eb21b04be679a48e1ff6207c531a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758f2f602967f1d5ff47b03bf8a552b6"><td class="memItemLeft" align="right" valign="top">LinearLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a758f2f602967f1d5ff47b03bf8a552b6">footerView</a></td></tr>
+<tr class="separator:a758f2f602967f1d5ff47b03bf8a552b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a0011c1b79e64338fcae127e685b03"><td class="memItemLeft" align="right" valign="top">TextView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a24a0011c1b79e64338fcae127e685b03">footerTextview</a></td></tr>
+<tr class="separator:a24a0011c1b79e64338fcae127e685b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58cee08bcdac672e7194e2900f96242"><td class="memItemLeft" align="right" valign="top">ProgressBar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#ac58cee08bcdac672e7194e2900f96242">footerProgressBar</a></td></tr>
+<tr class="separator:ac58cee08bcdac672e7194e2900f96242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dea16e50dd2021a5a164189f26d9f0"><td class="memItemLeft" align="right" valign="top">LinearLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#ad8dea16e50dd2021a5a164189f26d9f0">nodataView</a></td></tr>
+<tr class="separator:ad8dea16e50dd2021a5a164189f26d9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2974498137c7fff5ed9abea9504f5c91"><td class="memItemLeft" align="right" valign="top">BaseAdapter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a2974498137c7fff5ed9abea9504f5c91">mAdapter</a> = null</td></tr>
+<tr class="separator:a2974498137c7fff5ed9abea9504f5c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c3bab6d0c3485d18729f890f64adb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_queue.html">AbHttpQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a65c3bab6d0c3485d18729f890f64adb7">netGet</a> = null</td></tr>
+<tr class="separator:a65c3bab6d0c3485d18729f890f64adb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f94153142cec95a43831d30511dfe08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_item.html">AbHttpItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a0f94153142cec95a43831d30511dfe08">itemRefresh</a> = null</td></tr>
+<tr class="separator:a0f94153142cec95a43831d30511dfe08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab4c6271e921a12a6edeb5d35f45810"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_item.html">AbHttpItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a4ab4c6271e921a12a6edeb5d35f45810">itemScroll</a> = null</td></tr>
+<tr class="separator:a4ab4c6271e921a12a6edeb5d35f45810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1436f15dbafbf1eab7ed974db0d1ca52"><td class="memItemLeft" align="right" valign="top">RotateAnimation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a1436f15dbafbf1eab7ed974db0d1ca52">animation</a></td></tr>
+<tr class="separator:a1436f15dbafbf1eab7ed974db0d1ca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bbe711720ff2504a1fb7d2d8f06375"><td class="memItemLeft" align="right" valign="top">RotateAnimation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#af5bbe711720ff2504a1fb7d2d8f06375">reverseAnimation</a></td></tr>
+<tr class="separator:af5bbe711720ff2504a1fb7d2d8f06375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b813a490c4439eb71f6daaf4b1ee3d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a62b813a490c4439eb71f6daaf4b1ee3d">isRecored</a></td></tr>
+<tr class="separator:a62b813a490c4439eb71f6daaf4b1ee3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159e4c756df8ba7ff356df2c7d398bf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a159e4c756df8ba7ff356df2c7d398bf2">headContentWidth</a></td></tr>
+<tr class="separator:a159e4c756df8ba7ff356df2c7d398bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb668efc77d6e6527ecb102af703f9cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#aeb668efc77d6e6527ecb102af703f9cc">headContentHeight</a></td></tr>
+<tr class="separator:aeb668efc77d6e6527ecb102af703f9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8803920d5204b6e80223c2a5f687c83b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a8803920d5204b6e80223c2a5f687c83b">startY</a></td></tr>
+<tr class="separator:a8803920d5204b6e80223c2a5f687c83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8571e1cff192527382e8aa1a467260e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a8571e1cff192527382e8aa1a467260e3">firstItemIndex</a></td></tr>
+<tr class="separator:a8571e1cff192527382e8aa1a467260e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3867ed97af190091755a71cda793d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#afc3867ed97af190091755a71cda793d5">state</a></td></tr>
+<tr class="separator:afc3867ed97af190091755a71cda793d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaea4d239228da0f08350d4bff511006"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#afaea4d239228da0f08350d4bff511006">isBack</a></td></tr>
+<tr class="separator:afaea4d239228da0f08350d4bff511006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258a1cbf328c7accf87b5fb88bf36425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view_1_1_on_refresh_listener.html">OnRefreshListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a258a1cbf328c7accf87b5fb88bf36425">refreshListener</a></td></tr>
+<tr class="separator:a258a1cbf328c7accf87b5fb88bf36425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9142f9e64fa5ca56ae92a6ac1cceb05"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#ad9142f9e64fa5ca56ae92a6ac1cceb05">isRefreshable</a></td></tr>
+<tr class="separator:ad9142f9e64fa5ca56ae92a6ac1cceb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf37a3f6c71224e57fc98da0c7b532f9"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#abf37a3f6c71224e57fc98da0c7b532f9">lastRefreshTime</a> = null</td></tr>
+<tr class="separator:abf37a3f6c71224e57fc98da0c7b532f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:ad20be82f629785fdc83848cfb4c5520d"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#ad20be82f629785fdc83848cfb4c5520d">RELEASE_To_REFRESH</a> = 0</td></tr>
+<tr class="separator:ad20be82f629785fdc83848cfb4c5520d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae770efa64db83d8093dcf039f9e3d465"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#ae770efa64db83d8093dcf039f9e3d465">PULL_To_REFRESH</a> = 1</td></tr>
+<tr class="separator:ae770efa64db83d8093dcf039f9e3d465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c3cc1c920ddc07dc36e41f7d62c2b5"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#ac2c3cc1c920ddc07dc36e41f7d62c2b5">REFRESHING</a> = 2</td></tr>
+<tr class="separator:ac2c3cc1c920ddc07dc36e41f7d62c2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6240dd295d6819b2790eb5d41467e13"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#aa6240dd295d6819b2790eb5d41467e13">DONE</a> = 3</td></tr>
+<tr class="separator:aa6240dd295d6819b2790eb5d41467e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4c0f2c10931a4976a7ff1f883b6340"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#a5a4c0f2c10931a4976a7ff1f883b6340">LOADING</a> = 4</td></tr>
+<tr class="separator:a5a4c0f2c10931a4976a7ff1f883b6340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2d84643d96f6a4ce4e691fa90232d8"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view.html#aff2d84643d96f6a4ce4e691fa90232d8">RATIO</a> = 3</td></tr>
+<tr class="separator:aff2d84643d96f6a4ce4e691fa90232d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>描述：下拉刷新与上拉分页的ListView.</p>
+<dl class="section author"><dt>作者</dt><dd>zhaoqp </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>：2013-2-19 上午10:58:51 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a4ce900decd86597ba79a2e52881c8ffd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.ab.view.AbPullToRefreshListView.AbPullToRefreshListView </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Instantiates a new ab pull to refresh list view.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>the context </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6812c4d8621dcb41780f9d2a5959e5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.ab.view.AbPullToRefreshListView.AbPullToRefreshListView </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AttributeSet&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Instantiates a new ab pull to refresh list view.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>the context </td></tr>
+    <tr><td class="paramname">attrs</td><td>the attrs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a45e531c34f6cf479e28f0eff6ae5b951"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.changeHeaderViewByState </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Change header view by state. </p>
+
+</div>
+</div>
+<a class="anchor" id="abead1b751fac830c28eab7768e0d12c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.init </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>初始化布局.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>the context </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c4ffb8dbe60c857acacf860fbff41f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.measureView </td>
+          <td>(</td>
+          <td class="paramtype">View&#160;</td>
+          <td class="paramname"><em>child</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Measure view.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>the child </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6b1e22624a390e20462c866ce0194a99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.onRefresh </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>On refresh. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a3909faff902a6320d72c2e1fe73ab8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.onRefreshComplete </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：下拉数据完成必须被ListView主动调用，显示headerView. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c03b31980f405e71eb891c0e8ee66aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.onScroll </td>
+          <td>(</td>
+          <td class="paramtype">AbsListView&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>firstVisiableItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>visibleItemCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>totalItemCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：TODO.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg0</td><td>the arg0 </td></tr>
+    <tr><td class="paramname">firstVisiableItem</td><td>the first visiable item </td></tr>
+    <tr><td class="paramname">visibleItemCount</td><td>the visible item count </td></tr>
+    <tr><td class="paramname">totalItemCount</td><td>the total item count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>android.widget.AbsListView.OnScrollListener::onScroll(android.widget.AbsListView, int, int, int) </dd></dl>
+<dl class="section author"><dt>作者</dt><dd>: zhaoqp </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>：2013-6-17 上午9:04:46 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aca23dced66e7f746805b92b8e0eb5f0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.onScrollComplete </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>have</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：描述：上拉数据完成必须被ListView主动调用，显示footerView.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">have</td><td>是否还有新数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aab576efeeb1fb4a9543992cc668b3182"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.onScrollStateChanged </td>
+          <td>(</td>
+          <td class="paramtype">AbsListView&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scrollState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：TODO.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>the view </td></tr>
+    <tr><td class="paramname">scrollState</td><td>the scroll state </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>android.widget.AbsListView.OnScrollListener::onScrollStateChanged(android.widget.AbsListView, int) </dd></dl>
+<dl class="section author"><dt>作者</dt><dd>: zhaoqp </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>：2013-6-17 上午9:04:46 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2a14ca057d0b34d3b9a84a3307903d92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.ab.view.AbPullToRefreshListView.onTouchEvent </td>
+          <td>(</td>
+          <td class="paramtype">MotionEvent&#160;</td>
+          <td class="paramname"><em>event</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：TODO.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>true, if successful </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>android.widget.ListView::onTouchEvent(android.view.MotionEvent) </dd></dl>
+<dl class="section author"><dt>作者</dt><dd>: zhaoqp </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>：2013-6-17 上午9:04:46 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9397bd43a38db34c25243e3f56fc7c37"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.setAdapter </td>
+          <td>(</td>
+          <td class="paramtype">BaseAdapter&#160;</td>
+          <td class="paramname"><em>adapter</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：设置数据列表的适配器.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adapter</td><td>the new adapter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a10cb3b70204fdfd71dea54a69af6bfd2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.setonRefreshListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view_1_1_on_refresh_listener.html">OnRefreshListener</a>&#160;</td>
+          <td class="paramname"><em>refreshListener</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the on refresh listener.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">refreshListener</td><td>the new on refresh listener </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0eb970e1c7117af7b43017becabaef5a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.setRefreshItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_item.html">AbHttpItem</a>&#160;</td>
+          <td class="paramname"><em>item</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：下拉刷新事件设置.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>the new refresh item </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab40df07974883ca560b9bc1fe64cda0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.ab.view.AbPullToRefreshListView.setScrollItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_item.html">AbHttpItem</a>&#160;</td>
+          <td class="paramname"><em>item</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>描述：上拉刷新事件设置.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>the new scroll item </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a1436f15dbafbf1eab7ed974db0d1ca52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RotateAnimation com.ab.view.AbPullToRefreshListView.animation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>界面控制相关. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f36eb21b04be679a48e1ff6207c531a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bitmap com.ab.view.AbPullToRefreshListView.arrowImage = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The arrow image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9cbd7a78ce78d2fa19abf4fe0df85077"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageView com.ab.view.AbPullToRefreshListView.arrowImageView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The arrow image view. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6240dd295d6819b2790eb5d41467e13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int com.ab.view.AbPullToRefreshListView.DONE = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>刷新完成. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8571e1cff192527382e8aa1a467260e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbPullToRefreshListView.firstItemIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The first item index. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac58cee08bcdac672e7194e2900f96242"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProgressBar com.ab.view.AbPullToRefreshListView.footerProgressBar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The footer progress bar. </p>
+
+</div>
+</div>
+<a class="anchor" id="a24a0011c1b79e64338fcae127e685b03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextView com.ab.view.AbPullToRefreshListView.footerTextview</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The footer textview. </p>
+
+</div>
+</div>
+<a class="anchor" id="a758f2f602967f1d5ff47b03bf8a552b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout com.ab.view.AbPullToRefreshListView.footerView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>底部刷新栏. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeb668efc77d6e6527ecb102af703f9cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbPullToRefreshListView.headContentHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The head content height. </p>
+
+</div>
+</div>
+<a class="anchor" id="a159e4c756df8ba7ff356df2c7d398bf2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbPullToRefreshListView.headContentWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The head content width. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8bee1963d293a48ad9878eca4dd53c39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProgressBar com.ab.view.AbPullToRefreshListView.headerProgressBar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The header progress bar. </p>
+
+</div>
+</div>
+<a class="anchor" id="af4d1520cc4bdf003cb7f68efa9657678"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout com.ab.view.AbPullToRefreshListView.headerView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>顶部刷新栏. </p>
+
+</div>
+</div>
+<a class="anchor" id="afaea4d239228da0f08350d4bff511006"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.ab.view.AbPullToRefreshListView.isBack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The is back. </p>
+
+</div>
+</div>
+<a class="anchor" id="a62b813a490c4439eb71f6daaf4b1ee3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.ab.view.AbPullToRefreshListView.isRecored</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The is recored. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad9142f9e64fa5ca56ae92a6ac1cceb05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.ab.view.AbPullToRefreshListView.isRefreshable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The is refreshable. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0f94153142cec95a43831d30511dfe08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_item.html">AbHttpItem</a> com.ab.view.AbPullToRefreshListView.itemRefresh = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The item refresh. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ab4c6271e921a12a6edeb5d35f45810"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_item.html">AbHttpItem</a> com.ab.view.AbPullToRefreshListView.itemScroll = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The item scroll. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf37a3f6c71224e57fc98da0c7b532f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.ab.view.AbPullToRefreshListView.lastRefreshTime = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The last refresh time. </p>
+
+</div>
+</div>
+<a class="anchor" id="accfaf0208104ca8faef771b505001df0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextView com.ab.view.AbPullToRefreshListView.lastUpdatedTextView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The last updated text view. </p>
+
+</div>
+</div>
+<a class="anchor" id="a01589b4516a8d99da8357a8f85b867d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout.LayoutParams com.ab.view.AbPullToRefreshListView.layoutParamsFF = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>布局参数. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a15203f9af5ce41e18056326886cd39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout.LayoutParams com.ab.view.AbPullToRefreshListView.layoutParamsFW = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The layout params fw. </p>
+
+</div>
+</div>
+<a class="anchor" id="a223315247463bd1b2b962b67dee11767"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout.LayoutParams com.ab.view.AbPullToRefreshListView.layoutParamsWF = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The layout params wf. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab29de942f1a56871f0d15abd5be3ea8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout.LayoutParams com.ab.view.AbPullToRefreshListView.layoutParamsWW = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The layout params ww. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a4c0f2c10931a4976a7ff1f883b6340"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int com.ab.view.AbPullToRefreshListView.LOADING = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The Constant LOADING. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2974498137c7fff5ed9abea9504f5c91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BaseAdapter com.ab.view.AbPullToRefreshListView.mAdapter = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>数据相关. </p>
+
+</div>
+</div>
+<a class="anchor" id="a65c3bab6d0c3485d18729f890f64adb7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1ab_1_1net_1_1_ab_http_queue.html">AbHttpQueue</a> com.ab.view.AbPullToRefreshListView.netGet = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The net get. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad8dea16e50dd2021a5a164189f26d9f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout com.ab.view.AbPullToRefreshListView.nodataView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>无数据时显示的一条. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae770efa64db83d8093dcf039f9e3d465"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int com.ab.view.AbPullToRefreshListView.PULL_To_REFRESH = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The Constant PULL_To_REFRESH. </p>
+
+</div>
+</div>
+<a class="anchor" id="aff2d84643d96f6a4ce4e691fa90232d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int com.ab.view.AbPullToRefreshListView.RATIO = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The Constant RATIO. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac2c3cc1c920ddc07dc36e41f7d62c2b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int com.ab.view.AbPullToRefreshListView.REFRESHING = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>正在刷新. </p>
+
+</div>
+</div>
+<a class="anchor" id="a258a1cbf328c7accf87b5fb88bf36425"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacecom_1_1ab_1_1view_1_1_ab_pull_to_refresh_list_view_1_1_on_refresh_listener.html">OnRefreshListener</a> com.ab.view.AbPullToRefreshListView.refreshListener</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The refresh listener. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad20be82f629785fdc83848cfb4c5520d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int com.ab.view.AbPullToRefreshListView.RELEASE_To_REFRESH = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The Constant RELEASE_To_REFRESH. </p>
+
+</div>
+</div>
+<a class="anchor" id="af5bbe711720ff2504a1fb7d2d8f06375"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RotateAnimation com.ab.view.AbPullToRefreshListView.reverseAnimation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The reverse animation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8803920d5204b6e80223c2a5f687c83b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbPullToRefreshListView.startY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The start y. </p>
+
+</div>
+</div>
+<a class="anchor" id="afc3867ed97af190091755a71cda793d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.ab.view.AbPullToRefreshListView.state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The state. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4e62509b84a27291fffe2fcca77dadc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.ab.view.AbPullToRefreshListView.TAG = &quot;AbPullToRefreshListView&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The tag. </p>
+
+</div>
+</div>
+<a class="anchor" id="a219af3d09060ad91b25ffc02ae3d8e98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextView com.ab.view.AbPullToRefreshListView.tipsTextview</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The tips textview. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>F:/document/project/AndBase/src/com/ab/view/<a class="el" href="_ab_pull_to_refresh_list_view_8java.html">AbPullToRefreshListView.java</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 七月 16日 星期二 17:24:20 , 为 AndBase开发框架使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>
