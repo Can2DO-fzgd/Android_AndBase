@@ -5,37 +5,44 @@ package com.andbase.global;
 public class Constant {
 	
 	public static final boolean DEBUG = true;
-	public static final String sharePath = "chxue8_share";
+	public static final String sharePath = "andbase_share";
     public static final String USERSID = "user";
-    //Ò³ÃæÄ¬ÈÏÏÔÊ¾ÄÏ¾©£¬µÇÂ½ºóÏÔÊ¾×¢²áÓÃ»§µÄ³ÇÊĞ
+    //é¡µé¢é»˜è®¤æ˜¾ç¤ºå—äº¬ï¼Œç™»é™†åæ˜¾ç¤ºæ³¨å†Œç”¨æˆ·çš„åŸå¸‚
     public static final String CITYID = "cityId";
     public static final String CITYNAME = "cityName";
     public static final String DEFAULTCITYID = "1001";
-    public static final String DEFAULTCITYNAME = "ÄÏ¾©";
+    public static final String DEFAULTCITYNAME = "å—äº¬";
     
     //cookies
-    public static final String USERNAMECOOKIE = "chxue8Name";
-    public static final String USERPASSWORDCOOKIE = "chxue8Password";
-    public static final String USERPASSWORDREMEMBERCOOKIE = "chxue8remember";
+    public static final String USERNAMECOOKIE = "cookieName";
+    public static final String USERPASSWORDCOOKIE = "cookiePassword";
+    public static final String USERPASSWORDREMEMBERCOOKIE = "cookieRemember";
+    public static final String ISFIRSTSTART = "isfirstStart";
     
-    // Á¬½Ó³¬Ê±
+    // è¿æ¥è¶…æ—¶
  	public static final int timeOut = 12000;
- 	// ½¨Á¢Á¬½Ó
+ 	// å»ºç«‹è¿æ¥
  	public static final int connectOut = 12000;
- 	// »ñÈ¡Êı¾İ
+ 	// è·å–æ•°æ®
  	public static final int getOut = 60000;
  	
- 	//1±íÊ¾ÒÑÏÂÔØÍê³É
+ 	//1è¡¨ç¤ºå·²ä¸‹è½½å®Œæˆ
  	public static final int downloadComplete = 1;
- 	//1±íÊ¾Î´¿ªÊ¼ÏÂÔØ
+ 	//1è¡¨ç¤ºæœªå¼€å§‹ä¸‹è½½
  	public static final int undownLoad = 0;
- 	//2±íÊ¾ÒÑ¿ªÊ¼ÏÂÔØ
+ 	//2è¡¨ç¤ºå·²å¼€å§‹ä¸‹è½½
  	public static final int downInProgress = 2;
- 	//3±íÊ¾ÏÂÔØÔİÍ£
+ 	//3è¡¨ç¤ºä¸‹è½½æš‚åœ
  	public static final int downLoadPause = 3;
  	
- 	public static final String BASEURL = "http://www.chxue8.com/";
-    public final static String ADURL = BASEURL + "PublicServlet?methodName=getSetting";
+ 	public static final String BASEURL = "http://www.amsoft.cn/";
+ 	
+ 	//åº”ç”¨çš„key
+ 	//1512528
+ 	public final static String APPID = "1512528";
+ 		
+ 	//jfa97P4HIhjxrAgfUdq1NoKC
+ 	public final static String APIKEY = "jfa97P4HIhjxrAgfUdq1NoKC";
+ 	
     
-    public final static String ADDOVERLAYURL = BASEURL + "action/gfoverlay.do?methodName=addOverlayMobile";
 }

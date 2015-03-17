@@ -2,18 +2,18 @@
     android:id="@+id/parentLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/window_bg"
     android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+        android:background="@drawable/pic1">
 
         <TextView
             android:id="@+id/left1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="left"
             android:paddingLeft="10dip"
             android:paddingRight="10dip"
@@ -23,14 +23,6 @@
             android:textSize="18sp" >
         </TextView>
 
-        <ListView
-            android:id="@+id/mList"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:cacheColorHint="#00000000"
-            android:divider="#00000000"
-            android:listSelector="#00000000" >
-        </ListView>
     </LinearLayout>
 
 </LinearLayout>

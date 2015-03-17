@@ -1,59 +1,97 @@
 package com.andbase.model;
 
+import com.ab.db.orm.annotation.Column;
+import com.ab.db.orm.annotation.Id;
+import com.ab.db.orm.annotation.Table;
+@Table(name = "user")
 public class User {
 
-	// ÓÃ»§ID
-	public int uId;
-	// µÇÂ¼ÓÃ»§Ãû
-	public String name;
-	// ÓÃ»§ÃÜÂë
-	public String password;
-	// ÓÃ»§ÓÊÏä
-	public String email;
-	// ÓÃ»§È¨ÏŞ,0±íÊ¾¹ÜÀíÔ±£¬1±íÊ¾½ÌÔ±£¬2±íÊ¾Ñ§Ô±,3ÖĞ½é
-	public int rights;
-	// µÇÂ¼´ÎÊı
-	public int loginCount;
-	// ÌáÊ¾ÎÊÌâ
-	public String question;
-	// ÎÊÌâ´ğ°¸
-	public String answer;
-	// ÊÇ·ñÓĞÍ·Ïñ
-	public int hasPhoto;
-	// Í·ÏñµØÖ·
-	public String photoUrl;
-	// ´´½¨Ê±¼ä
+	// ID @Idä¸»é”®,intç±»å‹,æ•°æ®åº“å»ºè¡¨æ—¶æ­¤å­—æ®µä¼šè®¾ä¸ºè‡ªå¢é•¿
+	@Id
+	@Column(name = "_id")
+	private int _id;
+
+	@Column(name = "u_id")
+	private String uId;
+
+	// ç™»å½•ç”¨æˆ·å length=20æ•°æ®å­—æ®µçš„é•¿åº¦æ˜¯20
+	@Column(name = "user_name", length = 20)
+	private String userName;
+
+	// ç”¨æˆ·å¯†ç 
+	@Column(name = "password")
+	private String password;
+
+	// æ˜µç§°
+	@Column(name = "nick_name")
+	public String nickName;
+
+	// å¹´é¾„ä¸€èˆ¬æ˜¯æ•°å€¼,ç”¨type = "INTEGER"è§„èŒƒä¸€ä¸‹.
+	@Column(name = "age", type = "INTEGER")
+	private int age;
+
+	// ç”¨æˆ·æ€§åˆ«
+	@Column(name = "sex")
+	public String sex;
+
+	// ç”¨æˆ·é‚®ç®±
+	// å‡è®¾æ‚¨å¼€å§‹æ—¶æ²¡æœ‰æ­¤å±æ€§,ç¨‹åºå¼€å‘ä¸­æ‰æƒ³åˆ°æ­¤å±æ€§,ä¹Ÿä¸ç”¨å¸è½½ç¨‹åº.
+	@Column(name = "email")
+	private String email;
+
+	// å¤´åƒåœ°å€
+	@Column(name = "head_url")
+	private String headUrl;
+
+	// åˆ›å»ºæ—¶é—´
+	@Column(name = "create_time")
 	private String createTime;
-	// Ñ§·Ö£¬ÆÀ¶¨ĞÇ¼¶
-	public int point;
-	// µÈ¼¶·Ö£¬»áÔ±µÈ¼¶
-	public int level;
-	// ÊÇ·ñÈÏÖ¤ 0Î´ÈÏÖ¤£¬1ÒÑÈÏÖ¤
-	public int auth;
 
-	public User() {
+	// åŸå¸‚
+	@Column(name = "city")
+	private String city;
 
+	// ç®€ä»‹
+	@Column(name = "intro")
+	private String intro;
+
+	// ç§¯åˆ†
+	@Column(name = "point")
+	private int point;
+
+	// ç”¨æˆ·æƒé™,0è¡¨ç¤ºç®¡ç†å‘˜ï¼Œ1è¡¨ç¤ºä¼šå‘˜
+	@Column(name = "rights")
+	public int rights;
+
+	// ç”¨æˆ·é—®é¢˜
+	@Column(name = "question")
+	public String question;
+
+	// ç”¨æˆ·ç­”æ¡ˆ
+	@Column(name = "answer")
+	public String answer;
+
+	// ç™»å½•æ¬¡æ•°
+	@Column(name = "login_count")
+	public int loginCount;
+
+	// æœ‰äº›å­—æ®µæ‚¨å¯èƒ½ä¸å¸Œæœ›ä¿å­˜åˆ°æ•°æ®åº“ä¸­,ä¸ç”¨@Columnæ³¨é‡Šå°±ä¸ä¼šæ˜ å°„åˆ°æ•°æ®åº“.
+	private String remark;
+
+	// ç™»å½•æˆæƒ
+	@Column(name = "access_token")
+	private String accessToken;
+
+	// æ˜¯å¦ä¸ºå½“å‰ç™»å½•
+	@Column(name = "is_login_user")
+	private boolean isLoginUser;
+
+	public String getUserName() {
+		return userName;
 	}
 
-	public User(String name, String password) {
-		this.name = name;
-		this.password = password;
-	}
-
-	public int getuId() {
-		return uId;
-	}
-
-	public void setuId(int uId) {
-		this.uId = uId;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getPassword() {
@@ -64,20 +102,28 @@ public class User {
 		this.password = password;
 	}
 
-	public int getRights() {
-		return rights;
+	public String getSex() {
+		return sex;
 	}
 
-	public void setRights(int rights) {
-		this.rights = rights;
+	public void setSex(String sex) {
+		this.sex = sex;
 	}
 
-	public int getLoginCount() {
-		return loginCount;
+	public int getAge() {
+		return age;
 	}
 
-	public void setLoginCount(int loginCount) {
-		this.loginCount = loginCount;
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getQuestion() {
@@ -96,20 +142,45 @@ public class User {
 		this.answer = answer;
 	}
 
-	public int getHasPhoto() {
-		return hasPhoto;
+	public int getRights() {
+		return rights;
 	}
 
-	public void setHasPhoto(int hasPhoto) {
-		this.hasPhoto = hasPhoto;
+	public void setRights(int rights) {
+		this.rights = rights;
 	}
 
-	public String getPhotoUrl() {
-		return photoUrl;
+
+	public String getHeadUrl() {
+        return headUrl;
+    }
+
+    public void setHeadUrl(String headUrl){
+        this.headUrl = headUrl;
+    }
+
+    public int getPoint() {
+		return point;
 	}
 
-	public void setPhotoUrl(String photoUrl) {
-		this.photoUrl = photoUrl;
+	public void setPoint(int point) {
+		this.point = point;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getIntro() {
+		return intro;
+	}
+
+	public void setIntro(String intro) {
+		this.intro = intro;
 	}
 
 	public String getCreateTime() {
@@ -120,36 +191,60 @@ public class User {
 		this.createTime = createTime;
 	}
 
-	public String getEmail() {
-		return email;
+	public int getLoginCount() {
+		return loginCount;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setLoginCount(int loginCount) {
+		this.loginCount = loginCount;
 	}
 
-	public int getPoint() {
-		return point;
+	public String getNickName() {
+		return nickName;
 	}
 
-	public void setPoint(int point) {
-		this.point = point;
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
 	}
 
-	public int getLevel() {
-		return level;
+	public String getRemark() {
+		return remark;
 	}
 
-	public void setLevel(int level) {
-		this.level = level;
+	public void setRemark(String remark) {
+		this.remark = remark;
 	}
 
-	public int getAuth() {
-		return auth;
+	public int get_id() {
+		return _id;
 	}
 
-	public void setAuth(int auth) {
-		this.auth = auth;
+	public void set_id(int _id) {
+		this._id = _id;
 	}
-	
+
+	public void setuId(String uId) {
+		this.uId = uId;
+	}
+
+	public String getuId() {
+		return uId;
+	}
+
+	public String getAccessToken() {
+		return accessToken;
+	}
+
+	public void setAccessToken(String accessToken) {
+		this.accessToken = accessToken;
+	}
+
+	public boolean isLoginUser() {
+		return isLoginUser;
+	}
+
+	public void setLoginUser(boolean isLoginUser) {
+		this.isLoginUser = isLoginUser;
+	}
+
 }
